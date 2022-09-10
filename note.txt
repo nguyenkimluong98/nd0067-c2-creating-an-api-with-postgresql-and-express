@@ -1,0 +1,13 @@
+db-migrate create books-table --sql-file
+db-migrate create mythical-worlds-table --sql-file
+db-migrate up
+db-migrate down
+npx db-migrate up --config database.json -e dev
+
+{
+  id: 1,
+  firstname: 'admin',
+  lastname: 'user',
+  username: 'admin',
+  password: '$2b$10$v405FHfhjRnYzJXbRH97iuDOiTTiD3MsXrmCJKAmzU5baQAa5aRAy'
+}
